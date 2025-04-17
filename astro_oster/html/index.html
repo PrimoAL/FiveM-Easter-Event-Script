@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Ostereier Suche</title>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="falling-eggs"></div>
+    <div id="grass"></div>
+
+    <div id="stats-container">
+        <div id="stats-content">
+            <div id="stats-header">
+                <h1>
+                    <i class="fa-solid fa-egg bunny-icon"></i>
+                    Oster-Statistik
+                    <i class="fa-solid fa-rabbit chick-icon"></i>
+                </h1>
+                <div id="decorative-line"></div>
+                <p id="stats-subtitle">Spieler, die an der Ostereiersuche teilgenommen haben</p>
+            </div>
+            
+            <div id="players-container"></div>
+            
+            <div id="buttons">
+                <button id="close-btn-stats">
+                    <i class="fa-solid fa-xmark"></i> Schließen
+                </button>
+            </div>
+
+            <i class="fa-solid fa-egg easter-pattern pattern-1"></i>
+            <i class="fa-solid fa-carrot easter-pattern pattern-2"></i>
+            <i class="fa-solid fa-egg easter-pattern pattern-3"></i>
+            <i class="fa-solid fa-leaf easter-pattern pattern-4"></i>
+            <i class="fa-solid fa-sun easter-pattern pattern-5"></i>
+            <i class="fa-solid fa-cloud easter-pattern pattern-6"></i>
+        </div>
+    </div>
+
+    <div id="egg-container">
+        <div id="egg-content">
+            <i class="fa-solid fa-egg easter-pattern pattern-1"></i>
+            <i class="fa-solid fa-carrot easter-pattern pattern-2"></i>
+            <i class="fa-solid fa-egg easter-pattern pattern-3"></i>
+            <i class="fa-solid fa-leaf easter-pattern pattern-4"></i>
+            <i class="fa-solid fa-sun easter-pattern pattern-5"></i>
+            <i class="fa-solid fa-cloud easter-pattern pattern-6"></i>
+            
+            <div id="egg-header">
+                <h1>
+                    <i class="fa-solid fa-rabbit bunny-icon"></i>
+                    Oster Rätsel
+                    <i class="fa-solid fa-egg chick-icon"></i>
+                </h1>
+                <div id="decorative-line"></div>
+            </div>
+            
+            <div id="poem-container">
+                <p id="poem-start"></p>
+                <p class="hint">(Ergänze das fehlende Wort, achte auf Groß und Kleinschreibung)</p>
+                <div id="answer-container">
+                    <i class="fa-solid fa-egg egg-decoration egg-decoration-1"></i>
+                    <input type="text" id="poem-answer" placeholder="Ergänze die fehlenden Wörter..." maxlength="30">
+                    <i class="fa-solid fa-carrot egg-decoration egg-decoration-2"></i>
+                </div>
+                <div id="buttons">
+                    <button id="submit-btn">
+                        <i class="fa-solid fa-paper-plane"></i> Abschicken
+                    </button>
+                    <button id="close-btn">
+                        <i class="fa-solid fa-xmark"></i> Schließen
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
